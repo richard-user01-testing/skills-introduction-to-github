@@ -1,0 +1,13 @@
+name: Test Denial
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Non-Allowed Action
+        uses: actions/deploy-pages@v2
