@@ -1,0 +1,7 @@
+# In a fork PR
+on: [pull_request]
+jobs:
+  hack:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "If this runs, it's a bug"
